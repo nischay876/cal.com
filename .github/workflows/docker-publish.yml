@@ -64,14 +64,14 @@ jobs:
           --platform linux/amd64 \
           --push \
           --tag ghcr.io/${{ github.repository }}:latest \
-          --build-arg NEXT_PUBLIC_WEBAPP_URL=https://your-actual-url.com \
+          --build-arg NEXT_PUBLIC_WEBAPP_URL=https://dashboard.alicexue.com \
           --build-arg NEXT_PUBLIC_LICENSE_CONSENT=true \
           --build-arg CALCOM_TELEMETRY_DISABLED=1 \
           --build-arg DATABASE_URL=postgresql://unicorn_user:magical_password@database:5432/calendso \
           --build-arg NEXTAUTH_SECRET=secret \
           --build-arg CALENDSO_ENCRYPTION_KEY=secret \
           --build-arg NEXT_PUBLIC_SENTRY_DSN=your-sentry-dsn \
-          --build-arg NEXT_PUBLIC_API_V2_URL=https://not-set-up.outro.com/api/v2 \
+          --build-arg NEXT_PUBLIC_API_V2_URL=https://dashboard.alicexue.com/api/v2 \
           .
         shell: bash
 
