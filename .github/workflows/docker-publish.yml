@@ -1,14 +1,15 @@
 name: Docker
 
 on:
-  schedule:
-    - cron: '32 12 * * *'
   push:
-    branches: [ "main" ]
+    branches:
+      - main
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    tags: 
+      - 'v*.*.*'
   pull_request:
-    branches: [ "main" ]
+    branches: 
+      - main
   workflow_dispatch: # Manual trigger
 
 env:
